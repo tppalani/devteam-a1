@@ -4,14 +4,14 @@ metadata:
   name: application-initializer-devteam-a
   namespace: argocd
 spec:
-  project: devteam-a
+  project: devteam-a1
   source:
-    repoURL: https://github.com/tppalani/devteam-a.git
+    repoURL: https://github.com/tppalani/devteam-a1.git
     targetRevision: main
     path: applicationset
   destination:
     server: https://kubernetes.default.svc
-    namespace: devteam-a
+    namespace: devteam-a1
   # Sync policy
   syncPolicy:
     automated:
